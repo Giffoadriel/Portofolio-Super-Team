@@ -157,7 +157,7 @@
             color: var(--accent);
         }
 
-        /* Kolom Kanan: Detail Informasi (Memenuhi Sisa Layar) */
+        /* Kolom Kanan: Detail Informasi */
         .main-content {
             display: flex;
             flex-direction: column;
@@ -222,6 +222,33 @@
             border-radius: 8px;
         }
 
+        /* Tombol Surprise */
+        .surprise-section {
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #eff6ff, #dbeafe);
+            border: 2px dashed var(--accent);
+            border-radius: 12px;
+        }
+
+        .surprise-btn {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .surprise-btn:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -252,7 +279,7 @@
             <div class="social-links">
                 <a href="https://github.com/benedictananda" target="_blank">GitHub (@benedictananda)</a>
                 <a href="https://www.instagram.com/bene_ananda?vrfl=MW0zejF5NDl2OWFybQ%3D%3D&utm_source=qr" target="_blank">Instagram (@bene_ananda)</a>
-                <a href="mailto:6182301072@student.unpar.ac.id">Kirim Email</a>
+                <a href="mailto:6182301072@student.unpar.ac.id">Kirim Email (6182301072@student.unpar.ac.id)</a>
             </div>
         </aside>
 
@@ -265,7 +292,7 @@
                     <span class="hobbies-tag">Bermain Game</span>
                     <span class="hobbies-tag">Koleksi Parfum</span>
                     <span class="hobbies-tag">Mendengarkan Musik</span>
-                    <span class="hobbies-tag">Eksplor Kuliner</span>
+                    <span class="hobbies-tag">Eksplorasi Kuliner</span>
                 </div>
             </section>
 
@@ -289,8 +316,8 @@
                     </div>
 
                     <div class="activity-item">
-                        <div class="activity-title">Foto Event</div>
-                        <img src="imgBene/aktivitas2.jpg" alt="Foto Event" class="activity-img">
+                        <div class="activity-title">Dokumentasi Event</div>
+                        <img src="imgBene/aktivitas2.jpg" alt="Dokumentasi Event" class="activity-img">
                     </div>
 
                     <div class="activity-item">
@@ -299,6 +326,12 @@
                     </div>
                 </div>
             </section>
+
+            <section id="kejutan" class="card surprise-section">
+                <p style="margin-bottom: 1rem; color: var(--text-muted);">Klik tombol di bawah ini untuk melihat kejutan😘</p>
+                <button id="surpriseBtn" class="surprise-btn">Klik disini</button>
+            </section>
+
         </div>
     </main>
 
@@ -307,6 +340,7 @@
     </footer>
 
     <!-- Menghubungkan file JavaScript eksternal -->
-    <script src="benedict.js"></script>
+     <script src="benedict.js"></script>
+     
 </body>
 </html>
