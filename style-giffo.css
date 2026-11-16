@@ -157,3 +157,22 @@ footer {
     font-size: 2.2rem;
   }
 }
+
+.aktivitas-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.aktivitas-item img {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.aktivitas-item h3 {
+  margin-bottom: 4px;
+}
