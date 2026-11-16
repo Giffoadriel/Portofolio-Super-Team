@@ -166,6 +166,51 @@ footer {
   padding: 1.5rem;
 }
 
+.btn-surprise {
+  margin-left: 0.8rem;
+  background: transparent;
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.btn-surprise:hover {
+  background: var(--black);
+  color: #fff;
+  opacity: 1;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.modal.show { display: flex; }
+
+.modal-box {
+  background: var(--white);
+  padding: 2rem;
+  max-width: 380px;
+  text-align: center;
+  animation: muncul 0.25s ease;
+}
+
+.modal-box p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+@keyframes muncul {
+  from { transform: scale(0.85); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+
 @media (max-width: 700px) {
   .hero, section:not(.hero) { grid-template-columns: 1fr; }
   .aktivitas1, .aktivitas2, .aktivitas3 { grid-column: 1; }
